@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div class="card-body">
+    <form method="post" role="form" th:action="@{/login}" class="form-horizontal">
+        <div class="form-group mb-3">
+            <label class="control-label">User Id</label>
+            <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="form-control"
+                    placeholder="Enter User Id"
+            />
+        </div>
+
+        <div class="form-group mb-3">
+            <label class="control-label"> Password</label>
+            <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter password"
+            />
+        </div>
+        <div class="form-group mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+    </form>
+</div>
+</html>
